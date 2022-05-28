@@ -6,7 +6,7 @@
 
 [[_TOC_]]
 
-# overview
+## overview
 Here we are going to do five tasks from our Cloud computing course
 - An application development using Node.js
 - Cloud access and Application development using Docker
@@ -15,13 +15,13 @@ Here we are going to do five tasks from our Cloud computing course
 - Exercise on FaaS
 
 
-# Application development using Node.js
+## Application development using Node.js
 Here we create a simple web application by using node.js. For the database we used MongoDb also created and implemented REST based APIs
 After that we deployed this application on the GCP (Google Cloud Platform).
 
 
-# Cloud access and Application development using Docker
-# Building Microservices application
-# Application deployment using Kubernetes
-# Exercise on FaaS
+## Cloud access and Application development using Docker
+## Building Microservices application
+## Application deployment using Kubernetes
+## Exercise on FaaS
 
