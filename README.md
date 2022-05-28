@@ -14,13 +14,14 @@ Here we are going to do five tasks from our Cloud computing course
 - Exercise on FaaS
 
 
-## Application development using Node.js
+### Application development using Node.js
 - Created an application using **Node.js** for book management system i.e. we can store books with the necessary information and perform some operations on that like updating, deletion, etc.
 - We use **MongoDB** as a database for that and **REST** based APIs.
 - After that we have hosted this application on **GCP**(Google cloud platform)
+- Also applied **reverse proxy** just for getting the flavour of it :)
 
-## Cloud access and Application development using Docker
-## Building Microservices application
-## Application deployment using Kubernetes
-## Exercise on FaaS
+### Cloud access and Application development using Docker
+### Building Microservices application
+### Application deployment using Kubernetes
+### Exercise on FaaS
 
