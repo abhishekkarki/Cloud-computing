@@ -33,7 +33,7 @@ app.get('/', function homepage(req, res) {
  */
 
 app.get('/api', (req, res) => {
-  // TODO: Document all your api endpoints below as a simple hardcoded JSON object.
+  // Documenting all our api endpoints below as a simple hardcoded JSON object.
   res.json({
     message: 'Welcome to my app api!',
     documentationUrl: '', //leave this also blank for the first exercise
@@ -42,11 +42,11 @@ app.get('/api', (req, res) => {
       {method: 'GET', path: '/api', description: 'Describes all available endpoints'},
       {method: 'GET', path: '/api/profile', description: 'Data about me'},
       {method: 'GET', path: '/api/books/', description: 'Get All books information'},
-      // TODO: Write other API end-points description here like above
+      // other API end-points description here like above
     ]
   })
 });
-// TODO:  Fill the values
+//  Filling the values
 app.get('/api/profile', (req, res) => {
   res.json({
     'name': 'Anthony Smith',
@@ -85,7 +85,7 @@ app.post('/api/books/', (req, res) => {
    */
   console.log(req.body);
   /*
-   * TODO: use the books model and create a new object
+   * using the books model and create a new object
    * with the information in req.body
    */
   var nbook = new db.books(req.body);
@@ -112,7 +112,7 @@ app.put('/api/books/:id', (req, res) => {
   console.log(`book ID = ${bookId} \n Book Data = ${bookNewData}`);
 
   /*
-   * TODO: use the books model and find using the bookId and update the book information
+   * using the books model and find using the bookId and update the book information
    */
   db.books.findByIdAndUpdate(bookId, bookNewData,{new: true}, function (err, docs) {
     if (err){
@@ -137,7 +137,7 @@ app.delete('/api/books/:id', (req, res) => {
    */
   const bookId = req.params.id;
   /*
-   * TODO: use the books model and find using
+   * using the books model and find using
    * the bookId and delete the book
    */
   db.books.findByIdAndDelete(bookId, function (err, docs) {
