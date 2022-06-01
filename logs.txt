@@ -1,0 +1,18 @@
+Here you will find out the different procedures I used in this course also the problems I faced:
+- Installed all the required stuff like npm, node and mongoDB
+- We have to run an application in the VM.
+- Used GCP and hosted the application there
+- I tried to change the port from 80 to 8080 
+- also made reverse proxy just for fun and match port:8080 to 80
+
+Exercise 2.
+-Problems with the deployment method with the 1st exercise
+a) OS Dependent: Different deployment procedure and requirements for different OS.
+b) Not-Scalable: Run on ore Laptops or VMs
+c) Not-Portable: Running the same procedure from starting again on the new machine. Time consuming
+
+Containerization(container based virtualization)
+
+It is an OS-level virtualization method for deploying and running distributed applications without launching an entire VM for each application.
+It share the same OS kernel as host.
+
