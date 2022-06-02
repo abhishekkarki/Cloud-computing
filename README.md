@@ -21,6 +21,12 @@ Here we are going to do five tasks from our Cloud computing course
 - Also applied **reverse proxy** just for getting the flavour of it :)
 
 ### Cloud access and Application development using Docker
+- Further on the above application, I containerised the the application using docker,
+- Created docker image and then push it to the docker registry 
+- Also created docker-composed.yml file
+- Using the docker composed file I pulled the docker image in the GCP VM
+- And then deploy the application there.
+
 ### Building Microservices application
 ### Application deployment using Kubernetes
 ### Exercise on FaaS
