@@ -26,6 +26,9 @@ Here we are going to do five tasks from our Cloud computing course
 - Also created docker-composed.yml file
 - Using the docker composed file I pulled the docker image in the GCP VM
 - And then deploy the application there.
+```
+$ sudo docker-compose up
+```
 
 ### Building Microservices application
 ### Application deployment using Kubernetes
