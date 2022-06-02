@@ -45,21 +45,21 @@ app.get('/api', (req, res) => {
       {method: 'PUT', path: '/api/books/', description: 'Update a book information, based on id'},
       {method: 'DELETE', path: '/api/books/', description: 'Delete a book information, based on id'},
       // TODO: Write other API end-points description here like above
-      {method: 'POST', path: 'api/exercise2/', description: 'sending some message to the client'}
+      {method: 'GET', path: 'api/exercise2/', description: 'sending some message to the client'}
     ]
   })
 });
 
 app.get('/api/profile', (req, res) => {
   res.json({
-    'name': 'John',
-    'homeCountry': 'Winterfell',
-    'degreeProgram': 'Night\'s Watch',//informatics or CSE.. etc
-    'email': 'john@got.com',
+    'name': 'Abhishek',
+    'homeCountry': 'India',
+    'degreeProgram': 'computer science',//informatics or CSE.. etc
+    'email': 'abhishek.karki.@tum.de',
     'deployedURLLink': '',//leave this blank for the first exercise
     'apiDocumentationURL': '', //leave this also blank for the first exercise
-    'currentCity': 'The Wall',
-    'hobbies': ['Fight White Walkers']
+    'currentCity': 'Munich',
+    'hobbies': ['Coding', 'playing badmintion']
 
   });
 });
@@ -144,11 +144,8 @@ app.delete('/api/books/:id', (req, res) => {
 /*
  * Adding a new message about our group and docker
  */
-app.post('api/exercise2', (req, res) => {
-  /*
-    * sends a message when user call this api
-   */
-  res.send('group 250 application deployed using docker');
+app.get('/api/exercise2/', (req, res) =>{
+  res.send("group 250 application deployed using docker");
 });
 /**********
  * SERVER *
