@@ -19,7 +19,7 @@ You can find detailed information about all the problems I faced during building
 
 ### Application development using Node.js
 - Created an application using **Node.js** for book management system i.e. we can store books with the necessary information and perform some operations on that like updating, deletion, etc.
-- Useed **MongoDB** as a database for that and **REST** based APIs.
+- Used **MongoDB** as a database for that and **REST** based APIs.
 - After that I have hosted this application on **GCP**(Google cloud platform) on specific port.
 - Also applied **reverse proxy** just for getting the flavour of it :)
 
