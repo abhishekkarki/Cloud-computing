@@ -14,7 +14,7 @@ Here I am going to fully deploy an application in clouds using various technique
 - Exercise on FaaS
 
 
-You can find in detail information about all the problems I faced during building this project and then techniques applied to come over them in the log.txt file.
+You can find detailed information about all the problems I faced during building this project and then techniques applied to come over them in the log.txt file.
 
 
 ### Application development using Node.js
