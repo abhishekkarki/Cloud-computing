@@ -20,3 +20,37 @@ It share the same OS kernel as host.
 While running the application in the cloud using docker-compose.yml file I faecd this error, after digging in it I found this technique in the internet which works for me, that is since I am using mac m1 chip which is ARM compatible and there for the image which was created by that is not supported by google cloud. Therefore I used the command called "buildx" and setting the expected platform which was:
 {docker buildx build --platform linux/amd64 -t image_name .}  (dot is for the path)
 
+Steps for running the containerised app:
+1. Adding a new api in the server.js 
+2. Create the dockerFile (refer the dockerFile)
+3. Creating docker hub account and fill out the docker-compose file(already filled just need to change some part)
+4. Building and pushing the image in the docker hub
+  commands for building an image
+    $ docker --version (for checking the version of docker)
+    $ docker images (for checking the list of docker images)
+    $ docker login (for log in docker)
+    $ docker build -t cloudcomputinggroup250:latest ./server (for building an image here -t is for tag and then image name with tag and then the path)
+    $ docker buildx build --platform linux/amd64 -t cloudcomputinggroup250:lts ./server (for building the image this is specifically for the linux based    
+      system, I used this buildx because I was facing issue with the image build in m1 chip)
+    $ docker image rm -f image-id (for removing an image)
+    $ docker tag image-name:tag new-image-name:tag (for changing the name of the image)
+    $ docker run -d image-id sleep infinity(for running the container which is instance of an image, here d is for detach mode)
+    $ docker-compose up (for running the docker-composed.yml file)
+    $ docker-compose down (for closing the docker-composed.yml file)
+    $ docker push abhishekkarki/cloudcomputinggroup250:lts (for pushing the image in docker hub where abhishekkarki is dockerid and cloudcomputinggroup250
+      is image name and lts is the tag)
+5. Start VM in GCP, install docker and docker-compose on it
+6. pull application image on it using the docker-compose file
+7. After that run the application using the docker-compose up, remember to remove the build line from docker-compose.yml
+    for rebuilding and rerunning the command is docker-compose up --build
+8. If you want to check that all the services are running or not check it using command docker ps, there are 2 different container running one for the 
+    cloudcomputinggroup and another is mongodb
+9. Enable docker remote api
+    Modify the line that starts with ExecStart to look like this
+    ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock -H tcp://0.0.0.0:4243 
+    Where the addition is -H tcp://0.0.0.0:4243
+    Run systemctl daemon-reload
+    Run sudo service docker restart
+    Test that the Docker API is accessible curl http://YOUR_VM_PUBLIC_IP:4243/version
+10. enable port 3000 and 4243
+additional -> you can add specific ip like submission server IP address 131.159.35.171 in source Ip ranges 
