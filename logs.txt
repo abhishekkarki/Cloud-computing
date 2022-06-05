@@ -53,4 +53,4 @@ Steps for running the containerised app:
     Run sudo service docker restart
     Test that the Docker API is accessible curl http://YOUR_VM_PUBLIC_IP:4243/version
 10. enable port 3000 and 4243
-additional -> you can add specific ip like submission server IP address 131.159.35.171 in source Ip ranges 
+additional -> you can add specific ip like submission server IP address 131.159.35.171 in source Ip ranges, but in order to access the application from different browser or everywhere add IP as 0.0.0.0/0
