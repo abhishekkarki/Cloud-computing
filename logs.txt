@@ -16,3 +16,10 @@ Containerization(container based virtualization)
 It is an OS-level virtualization method for deploying and running distributed applications without launching an entire VM for each application.
 It share the same OS kernel as host.
 
+
+
+MICROSERVICES
+---------------
+Splitting the big monolithic application into samll services which can be developled, deployed and maintain by a person or small team.
+
+It has it's own advantages and disadvantages in comparision to the monolithic structure of an applicaion.
