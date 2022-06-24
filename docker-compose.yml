@@ -2,7 +2,7 @@ version: '3'
 services:
   server:
     build: ./server
-    image: abhishekkarki/cloudcomputinggroup250:latest
+    image: abhishekkarki/cloudcomputinggroup250:lts
     container_name: cloudcomputinggroup250
     depends_on:
       - "mongodb"
