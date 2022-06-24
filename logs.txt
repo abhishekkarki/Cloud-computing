@@ -16,6 +16,13 @@ Containerization(container based virtualization)
 It is an OS-level virtualization method for deploying and running distributed applications without launching an entire VM for each application.
 It share the same OS kernel as host.
 
+
+
+MICROSERVICES
+---------------
+Splitting the big monolithic application into samll services which can be developled, deployed and maintain by a person or small team.
+
+It has it's own advantages and disadvantages in comparision to the monolithic structure of an applicaion.
 ***docker-entrypoint.sh: exec format error***
 While running the application in the cloud using docker-compose.yml file I faecd this error, after digging in it I found this technique in the internet which works for me, that is since I am using mac m1 chip which is ARM compatible and there for the image which was created by that is not supported by google cloud. Therefore I used the command called "buildx" and setting the expected platform which was:
 {docker buildx build --platform linux/amd64 -t image_name .}  (dot is for the path)
@@ -54,3 +61,4 @@ Steps for running the containerised app:
     Test that the Docker API is accessible curl http://YOUR_VM_PUBLIC_IP:4243/version
 10. enable port 3000 and 4243
 additional -> you can add specific ip like submission server IP address 131.159.35.171 in source Ip ranges, but in order to access the application from different browser or everywhere add IP as 0.0.0.0/0
+
