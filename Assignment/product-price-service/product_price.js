@@ -7,7 +7,7 @@ module.exports = function (options) {
     //To DO: add the pattern functions and describe the logic inside the function
     function productPrice(msg, respond){
         for(const key in mockData){
-            if(mockData[key].product_id == msg.productId){
+            if(mockData[key].product_id === parseInt(msg.productId)){
                 var res = mockData[key].product_price;
                 respond(null, { result: res });
                 break;
