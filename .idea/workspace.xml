@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c20c0d3a-64c2-42d1-a6f1-4e71d513e469" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/data/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-2-2746049891156040130.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection-2-2746049891156040130.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-4-2746049891156040130.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection-4-2746049891156040130.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-3-2746049891156040130.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-3-2746049891156040130.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-5-2746049891156040130.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-5-2746049891156040130.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-6-2746049891156040130.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-6-2746049891156040130.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2A0pRtBUSqXHq4SOpuvAtwZKLPx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/abhishek/Desktop/Courses/Cloud/Cloud-computing&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c20c0d3a-64c2-42d1-a6f1-4e71d513e469" name="Changes" comment="" />
+      <created>1654156352723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654156352723</updated>
+      <workItem from="1654156355301" duration="17414000" />
+      <workItem from="1654186783535" duration="2734000" />
+      <workItem from="1654200076772" duration="1982000" />
+      <workItem from="1654353998364" duration="604000" />
+      <workItem from="1654432890637" duration="1745000" />
+      <workItem from="1654857046133" duration="1338000" />
+      <workItem from="1656019781488" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

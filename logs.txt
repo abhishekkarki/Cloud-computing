@@ -16,3 +16,52 @@ Containerization(container based virtualization)
 It is an OS-level virtualization method for deploying and running distributed applications without launching an entire VM for each application.
 It share the same OS kernel as host.
 
+
+
+
+--------------------------------------------------------------------------------------------------------
+Exercise 3
+Building the microservices
+
+Here we are deploying the 3 microservices:
+- product-price
+- product-description
+- book-name
+
+Instead of a database we just created a MockData.json file which contains all the records, and we have to find the details of those records.
+
+The idea is if a user will give a product id then we have to return the product name, price and url.
+
+Steps for deploying the application in GCP.
+METHOD 1:
+If you have arm64 based machine like linux distribution.
+- run the application in the local.
+- push the images to the docker hub using the command docker push name_of_image
+- just copy the docker-compose.yml file to the VM on GCP
+- and now run the 'docker-compose up', what it will do is it will pull the images form the docker hub and then run the application
+* if you changed the code then do 'docker-compose up --build'
+ 
+METHOD 2:
+If you have amd64 based machine like mac m1
+- now for this ther are again 2 option
+1st option: 
+do as you did above but while building the images use buildx command so that it will build the images for amd64
+
+2nd option :
+push the entire application code to the VM on GCP and then run the docker-compose up command it will build it, here in this it will not pull the images from the docker hub because we are building the images here itself.
+
+You can follow this option in linux also if you want to avoid the docker hub thing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
