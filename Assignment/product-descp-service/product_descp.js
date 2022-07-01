@@ -10,28 +10,23 @@ module.exports = function (options) {
 
     //To DO: add the pattern functions and describe the logic inside the function
     function productURL(msg, respond){
-        for(const key in mockData) {
-            if(mockData[key].product_id === msg.productId){
-                respond(null, {result: mockData.key.product_url});
-            }
-            else {
-                respond(null, { result: ''});
+        for(const key1 in mockData){
+            if(mockData[key1].product_id === parseInt(msg.productId)){
+                var res1 = mockData[key1].product_url;
+                respond(null, { result: res1 });
+                break;
+
             }
         }
     }
 
     function productName(msg, respond){
-        for(const key in mockData){
-            if(mockData[key].product_id === msg.productId){
-                respond(null, {result: mockData.key.product_name});
-            }
-            else {
-                respond(null, { result: ''});
+        for(const key2 in mockData){
+            if(mockData[key2].product_id === parseInt(msg.productId)){
+                var res2 = mockData[key2].product_name;
+                respond(null, { result: res2 });
+                break;
             }
         }
     }
-
-
-
-
 }

@@ -1,11 +1,11 @@
 // =============================================================================
 /**
- * Cloud Computing Course Exercises
+ * Cloud Computing Cource Exercises
  * Exercise 3
- * Build A microservice
+ *  Build A microservice
  * Developed by 'Group 250'
- * Abhishek Karki
- * Wafaa N
+ * Abhishek
+ * Wafaa
  */
 // =============================================================================
 /**
