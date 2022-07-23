@@ -38,5 +38,5 @@ $ sudo docker-compose up
 
 ### Building Microservices application
 ### Application deployment using Kubernetes
-### Exercise on FaaS
+### FaaS
 
